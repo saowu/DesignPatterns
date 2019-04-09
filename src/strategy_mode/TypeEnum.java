@@ -1,4 +1,4 @@
-package strategy_mode.model;
+package strategy_mode;
 
 /**
  * @description: 收费折扣类型
