@@ -1,5 +1,7 @@
 package simple_factory_mode;
 
+import simple_factory_mode.model.Operation;
+
 import java.util.Scanner;
 
 /**

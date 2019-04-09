@@ -1,4 +1,4 @@
-package simple_factory_mode;
+package simple_factory_mode.model;
 
 /**
  * @description: 运算类
@@ -12,7 +12,7 @@ public class Operation {
     public double result = 0;
 
     /**
-     * 计算结果
+     * 计算结果，需要子类重写
      *
      * @return 结果
      */

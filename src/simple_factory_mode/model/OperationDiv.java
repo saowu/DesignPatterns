@@ -1,4 +1,5 @@
-package simple_factory_mode;
+package simple_factory_mode.model;
+
 
 /**
  * @description: 除法类
