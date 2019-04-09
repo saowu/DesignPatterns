@@ -1,9 +1,6 @@
 package strategy_mode;
 
-import strategy_mode.model.BaseCharge;
-import strategy_mode.model.DiscountCharge;
-import strategy_mode.model.NormalCharge;
-import strategy_mode.model.ReturnCharge;
+import strategy_mode.model.*;
 
 /**
  * @description: 策略算法上下文引用，策略和简单工厂结合
