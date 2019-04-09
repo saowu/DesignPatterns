@@ -1,5 +1,7 @@
 package strategy_mode;
 
+import strategy_mode.model.TypeEnum;
+
 /**
  * @description: 策略模式+简单工厂模式实现商场促销
  * @author: wuyanbo
