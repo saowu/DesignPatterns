@@ -35,7 +35,7 @@ OperationDiv | 除法类 | class | extends Operation
 OperationDiv | 除法类 | class | extends Operation
 OperationFactory | 运算工厂类 | class | ---
 SimpleFactoryMode | 启动类 | class | ---
-####     1. 策略模式
+####     2. 策略模式
 ```
 package strategy_mode
 ```
