@@ -1,4 +1,4 @@
-package decorative_mode.model;
+package decorator_mode.model;
 
 /**
  * @description: 装饰类
@@ -6,13 +6,13 @@ package decorative_mode.model;
  * @create: 2019-04-11 12:47
  **/
 
-public class Decorative extends Component {
+public class Decorator extends Component {
 
 
     private Component component;
 
 
-    public Decorative(Component component) {
+    public Decorator(Component component) {
         this.component = component;
     }
 

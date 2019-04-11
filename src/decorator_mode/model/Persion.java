@@ -1,4 +1,4 @@
-package decorative_mode.model;
+package decorator_mode.model;
 
 /**
  * @description: 人物类

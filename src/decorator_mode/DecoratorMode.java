@@ -1,9 +1,9 @@
-package decorative_mode;
+package decorator_mode;
 
-import decorative_mode.model.BigTrouser;
-import decorative_mode.model.Persion;
-import decorative_mode.model.Sneaker;
-import decorative_mode.model.TShirts;
+import decorator_mode.model.BigTrouser;
+import decorator_mode.model.Persion;
+import decorator_mode.model.Sneaker;
+import decorator_mode.model.TShirts;
 
 /**
  * @description: 装饰模式
@@ -11,7 +11,7 @@ import decorative_mode.model.TShirts;
  * @create: 2019-04-11 12:42
  **/
 
-public class DecorativeMode {
+public class DecoratorMode {
 
     public static void main(String[] args) {
         Persion jack = new Persion("Jack");

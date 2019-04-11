@@ -1,4 +1,4 @@
-package decorative_mode.model;
+package decorator_mode.model;
 
 /**
  * @description: 工裤
@@ -6,7 +6,7 @@ package decorative_mode.model;
  * @create: 2019-04-11 12:58
  **/
 
-public class BigTrouser extends Decorative {
+public class BigTrouser extends Decorator {
 
     public BigTrouser(Component component) {
         super(component);
