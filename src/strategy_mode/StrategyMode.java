@@ -1,5 +1,6 @@
 package strategy_mode;
 
+import strategy_mode.model.ChargeContext;
 import strategy_mode.model.TypeEnum;
 
 /**

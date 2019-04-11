@@ -1,6 +1,5 @@
-package strategy_mode;
+package strategy_mode.model;
 
-import strategy_mode.model.*;
 
 /**
  * @description: 策略算法上下文引用，策略和简单工厂结合

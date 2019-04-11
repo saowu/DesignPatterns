@@ -1,4 +1,4 @@
-package simple_factory_mode;
+package simple_factory_mode.model;
 
 import simple_factory_mode.model.Operation;
 import simple_factory_mode.model.OperationAdd;

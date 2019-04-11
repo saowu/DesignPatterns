@@ -21,7 +21,7 @@
         
 ## 二、设计模式
     
-####     1. 简单工厂模式
+####     1. 简单工厂模式-----计算器
 ```
 package simple_factory_mode
 ```
@@ -35,7 +35,7 @@ OperationDiv | 除法类 | class | extends Operation
 OperationDiv | 除法类 | class | extends Operation
 OperationFactory | 运算工厂类 | class | ---
 SimpleFactoryMode | 启动类 | class | ---
-####     2. 策略模式
+####     2. 策略模式-----商场促销
 ```
 package strategy_mode
 ```
@@ -48,5 +48,19 @@ ReturnCharge | 返利收费 | class | extends BaseCharge
 TypeEnum | 收费折扣类型 | enum | ---
 ChargeContext | 策略算法上下文引用 | class | ----
 StrategyMode | 启动类 | class | ---
+
+#### 3.装饰模式-----穿衣系统
+```
+package decorative_mode
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+Component | 公共抽象类| abstract class | ---
+Decorative | 装饰类 | class | extends Component
+Persion | 人物类 | class | extends Component
+BigTrouser | 工裤类 | class | extends Decorative
+Sneaker | 鞋子类 | class | extends Decorative
+TShirts | T恤类 | class | extends Decorative
+DecorativeMode | 启动类 | class | ---
 
     
