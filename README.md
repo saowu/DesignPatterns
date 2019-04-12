@@ -110,5 +110,6 @@ package proxy_mode.dynamic_proxy_mode.cglib_dynamic_proxy
 Suitors | 追求者 | class | implements IGiveGift
 CglibProxy | 代理类 | class | implements MethodInterceptor
 CglibDynamicProxy | 启动类 | class | ---
+
 需要导入[spring-core-3.2.3.release.jar](http://www.java2s.com/Code/Jar/s/Downloadspringcore323releasejar.htm)
     
