@@ -77,14 +77,38 @@ DecoratorMode | 启动类 | class | ---
 ```
 package proxy_mode
 ```
+
+##### a.静态代理方式
+```
+package proxy_mode.static_proxy_mode
+```
 类名 | 释义 | 类型 | 依赖关系 
 ---|---|---|---
-Component | 公共抽象类| abstract class | ---
-Decorator | 装饰类 | class | extends Component
-Persion | 人物类 | class | extends Component
-BigTrouser | 工裤类 | class | extends Decorator
-Sneaker | 鞋子类 | class | extends Decorator
-TShirts | T恤类 | class | extends Decorator
-DecoratorMode | 启动类 | class | ---
+IGiveGift | 送礼物接口| interface | ---
+Suitors | 追求者 | class | implements IGiveGift
+Proxy | 代理类 | class | implements IGiveGift
+StaticProxyMode | 启动类 | class | ---
 
+
+##### b.jdk动态代理方式
+```
+package proxy_mode.dynamic_proxy_mode.jdk_dynamic_proxy
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+IGiveGift | 送礼物接口| interface | ---
+Suitors | 追求者 | class | implements IGiveGift
+JdkProxy | 代理类 | class | implements InvocationHandler
+JdkDynamicProxy | 启动类 | class | ---
+
+##### c.cglib动态代理方式
+```
+package proxy_mode.dynamic_proxy_mode.cglib_dynamic_proxy
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+Suitors | 追求者 | class | implements IGiveGift
+CglibProxy | 代理类 | class | implements MethodInterceptor
+CglibDynamicProxy | 启动类 | class | ---
+需要导入[spring-core-3.2.3.release.jar](http://www.java2s.com/Code/Jar/s/Downloadspringcore323releasejar.htm)
     
