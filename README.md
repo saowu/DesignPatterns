@@ -72,4 +72,19 @@ Sneaker | 鞋子类 | class | extends Decorator
 TShirts | T恤类 | class | extends Decorator
 DecoratorMode | 启动类 | class | ---
 
+#### 4.代理模式-----送礼物
+
+```
+package proxy_mode
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+Component | 公共抽象类| abstract class | ---
+Decorator | 装饰类 | class | extends Component
+Persion | 人物类 | class | extends Component
+BigTrouser | 工裤类 | class | extends Decorator
+Sneaker | 鞋子类 | class | extends Decorator
+TShirts | T恤类 | class | extends Decorator
+DecoratorMode | 启动类 | class | ---
+
     
