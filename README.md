@@ -111,5 +111,5 @@ Suitors | 追求者 | class | implements IGiveGift
 CglibProxy | 代理类 | class | implements MethodInterceptor
 CglibDynamicProxy | 启动类 | class | ---
 
-需要导入[spring-core-3.2.3.release.jar](http://www.java2s.com/Code/Jar/s/Downloadspringcore323releasejar.htm)
+需要导入[cglib-2.2.8.jar](https://mvnrepository.com/artifact/cglib/cglib/3.2.8)
     
