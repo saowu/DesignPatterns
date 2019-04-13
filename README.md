@@ -131,4 +131,4 @@ MulFactory | 乘法工厂类 | clainterfacess | implements IFactory
 DivFactory | 除法工厂类 | interface | implements IFactory
 FactoryMode | 启动类 | class | ---
 
-相比简单工厂模式，工厂模式遵循开放-封闭原则，但增加的开发量。
+相比简单工厂模式，工厂模式遵循开放-封闭原则，但增加了开发量。
