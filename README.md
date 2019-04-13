@@ -113,3 +113,22 @@ CglibDynamicProxy | 启动类 | class | ---
 
 需要导入[cglib-2.2.8.jar](https://mvnrepository.com/artifact/cglib/cglib/3.2.8)
     
+####     5. 工厂模式-----计算器
+```
+package factory_mode
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+Operation | 运算类| class | ---
+OperationAdd | 加法类 | class | extends Operation
+OperationSub | 减法类 | class | extends Operation
+OperationMul | 乘法类 | class | extends Operation
+OperationDiv | 除法类 | class | extends Operation
+IFactory | 运算工厂接口 | interface | ---
+AddFactory | 加法工厂类 | interface | implements IFactory
+SubFactory | 减法工厂类 | interface | implements IFactory
+MulFactory | 乘法工厂类 | clainterfacess | implements IFactory
+DivFactory | 除法工厂类 | interface | implements IFactory
+FactoryMode | 启动类 | class | ---
+
+相比简单工厂模式，工厂模式遵循开放-封闭原则，单增加的开发量。
