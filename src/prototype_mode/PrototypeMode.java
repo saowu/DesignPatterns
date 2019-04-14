@@ -33,13 +33,13 @@ public class PrototypeMode {
         System.out.println(b1.toString());
         System.out.println(a1.toString());
 
-//        //深拷贝2
-//        Resume_2 a2 = new Resume_2("liaowp", "wuyanbo", new Address_2("jx", "gz"));
-//        Resume_2 b2 = a2.clone();
-//        b2.setName("pwl");
-//        b2.getAddress().setProvince("bj");
-//        System.out.println(b2.toString());
-//        System.out.println(a2.toString());
+        //深拷贝2
+        Resume_2 a2 = new Resume_2("liaowp", "wuyanbo", new Address_2("jx", "gz"));
+        Resume_2 b2 = a2.clone();
+        b2.setName("pwl");
+        b2.getAddress().setProvince("bj");
+        System.out.println(b2.toString());
+        System.out.println(a2.toString());
 
     }
 
