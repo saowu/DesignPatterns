@@ -132,3 +132,41 @@ DivFactory | 除法工厂类 | class | implements IFactory
 FactoryMode | 启动类 | class | ---
 
 相比简单工厂模式，工厂模式遵循开放-封闭原则，但增加了开发量。
+
+
+####     6. 原型模式-----印简历
+
+##### a.浅拷贝
+```
+package prototype_mode.shallow_copy_model
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+Resume | 简历类| class | implements Cloneable
+Address | 地址类 | class | ---
+PrototypeMode | 启动类 | class | ---
+
+##### b.深拷贝-1
+
+```
+package prototype_mode.deep_copy_mode
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+Resume_1 | 简历类| class | implements Cloneable
+Address_1 | 地址类 | class | implements Cloneable
+PrototypeMode | 启动类 | class | ---
+
+##### c.深拷贝-2
+
+```
+package prototype_mode.deep_copy_mode2
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+Resume_2 | 简历类| class | implements Cloneable
+Address_2 | 地址类 | class | implements Serializable
+PrototypeMode | 启动类 | class | ---
+
+- **浅拷贝**：对值类型的成员变量进行值的复制,对引用类型的成员变量仅仅复制引用,不复制引用的对象。  
+- **深拷贝**：对值类型的成员变量进行值的复制,对引用类型的成员变量也进行引用对象的复制。
