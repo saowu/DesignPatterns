@@ -170,3 +170,17 @@ PrototypeMode | 启动类 | class | ---
 
 - **浅拷贝**：对值类型的成员变量进行值的复制,对引用类型的成员变量仅仅复制引用,不复制引用的对象。  
 - **深拷贝**：对值类型的成员变量进行值的复制,对引用类型的成员变量也进行引用对象的复制。
+
+####     7. 模板方法模式-----抄试题
+```
+package template_method_mode
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+BaseTestPaper | 黑板试卷类| abstract class | ---
+TestPaperA | 手抄试卷A类 | class | extends BaseTestPaper
+TestPaperA | 手抄试卷B类 | class | extends BaseTestPaper
+TemplateMethodMode | 启动类 | class | ---
+
+模板方法模式实现了很好的代码复用性。
+
