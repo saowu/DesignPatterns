@@ -184,3 +184,18 @@ TemplateMethodMode | 启动类 | class | ---
 
 模板方法模式实现了很好的代码复用性。
 
+####     8. 外观方法模式-----炒股票
+```
+package facade_mode
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+Stock | 股票类| class | ---
+Realty | 房地产类 | class | ---
+NationalDebt | 国债类 | class | ---
+Fund | 基金类 | class | ---
+FacadeMode | 启动类 | class | ---
+
+完美体现了依赖倒转原则和迪米特法则的思想。
+
+
