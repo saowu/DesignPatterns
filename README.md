@@ -198,4 +198,18 @@ FacadeMode | 启动类 | class | ---
 
 完美体现了依赖倒转原则和迪米特法则的思想。
 
+####     9. 建造者模式-----产品生产线
+```
+package builder_mode
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+BaseBuilder | 建造者抽象类| abstract class | ---
+ConcreteBuilder1 | 具体建造者类1 | class | extends BaseBuilder
+ConcreteBuilder2 | 具体建造者类2 | class | extends BaseBuilder
+Product | 产品类 | class | ---
+Director | 指挥者类 | class | ---
+BuilderMode | 启动类 | class | ---
+
+建造者模式是在当创建复杂对象的算法应该独立于该对象的组成部分以及它们的装配方式时适用的模式。
 
