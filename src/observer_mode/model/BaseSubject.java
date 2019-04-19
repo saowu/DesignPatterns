@@ -33,6 +33,7 @@ public abstract class BaseSubject {
 
     /**
      * 通知方法
+     * 状态改变通知观察者做出改变
      */
     public void notifyObserver() {
         observerList.forEach((o) -> {

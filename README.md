@@ -213,3 +213,20 @@ BuilderMode | 启动类 | class | ---
 
 建造者模式是在当创建复杂对象的算法应该独立于该对象的组成部分以及它们的装配方式时适用的模式。
 
+####     10. 观察者模式-----员工偷懒
+```
+package observer_mode
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+BaseObserver | 抽象观察者| abstract class | ---
+BaseSubject | 抽象通知者 | abstract class | ---
+Boss | 老板类 | class | ---
+Employee | 员工类 | class | extends BaseObserver
+Reception | 前台类 | class | extends BaseSubject
+ObserverMode | 启动类 | class | ---
+
+当一个对象改变需要同时改变其他对象的时候使用观察者模式（发布-订阅模式）。
+
+
+
