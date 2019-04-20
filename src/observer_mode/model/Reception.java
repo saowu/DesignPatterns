@@ -6,7 +6,7 @@ package observer_mode.model;
  * @create: 2019-04-19 20:25
  **/
 
-    public class Reception extends BaseSubject {
+public class Reception extends BaseSubject {
 
     private String name;
 
@@ -17,9 +17,6 @@ package observer_mode.model;
         this.name = name;
     }
 
-    public Boss getBoss() {
-        return boss;
-    }
 
     public void setBoss(Boss boss) {
         this.boss = boss;
@@ -27,7 +24,7 @@ package observer_mode.model;
 
     @Override
     public void notifyObserver() {
-        System.out.println(name+"通知:"+boss.getName()+"回来了！");
+        System.out.println(name + "通知:" + boss.getName() + "回来了！");
         super.notifyObserver();
     }
 }
