@@ -1,5 +1,8 @@
 package abstract_factory_mode.model;
 
+/**
+ * 全限定名
+ */
 public enum DBEnum {
 
 

@@ -1,7 +1,7 @@
 package abstract_factory_mode.model;
 
 /**
- * @description:
+ * @description:利用反射技术生成对象
  * @author: wuyanbo
  * @create: 2019-04-20 21:34
  **/
