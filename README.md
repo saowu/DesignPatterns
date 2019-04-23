@@ -242,6 +242,7 @@ MySqlUser | mysql数据源-User | class | implements IUser
 MySqlDepartment | mysql数据源-Department | class | implements IUser
 SqlServerUser | sqlserver数据源-User | class | implements IDepartment
 SqlServerDepartment | sqlserver数据源-Department | class | implements IDepartment
+DBEnum | 反射-全限定名 | enum | ---
 DataSourceFactory | 数据源切换工厂 | class | ---
 AbstractFactoryMode | 启动类 | class | ---
 
