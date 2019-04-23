@@ -228,5 +228,22 @@ ObserverMode | 启动类 | class | ---
 
 当一个对象改变需要同时改变其他对象的时候使用观察者模式（发布-订阅模式）。
 
+####     11. 抽象工厂模式+反射-----切换DB源
+```
+package abstract_factory_mode
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+IUser | 操作用户接口 | interface | ---
+IDepartment | 操作部门接口 | interface | ---
+User | 用户实体 | class | ---
+Department | 部门实体 | class | ---
+MySqlUser | mysql数据源-User | class | implements IUser
+MySqlDepartment | mysql数据源-Department | class | implements IUser
+SqlServerUser | sqlserver数据源-User | class | implements IDepartment
+SqlServerDepartment | sqlserver数据源-Department | class | implements IDepartment
+DataSourceFactory | 数据源切换工厂 | class | ---
+AbstractFactoryMode | 启动类 | class | ---
 
+注意:[简单工厂、抽象工厂和抽象工厂模式的区别](https://blog.csdn.net/jerry11112/article/details/80618420)。
 

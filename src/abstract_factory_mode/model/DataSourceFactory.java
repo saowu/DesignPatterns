@@ -1,12 +1,14 @@
 package abstract_factory_mode.model;
 
 /**
- * @description:利用反射技术生成对象
+ * @description: 数据源工厂
+ * <p>
+ * 利用反射技术生成对象
  * @author: wuyanbo
  * @create: 2019-04-20 21:34
  **/
 
-public class DataSource {
+public class DataSourceFactory {
 
 
     public static IUser createUser(DBEnum cla) {

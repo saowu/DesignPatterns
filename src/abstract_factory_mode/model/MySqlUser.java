@@ -1,9 +1,8 @@
 package abstract_factory_mode.model;
 
 
-
 /**
- * @description:mysql引擎操作
+ * @description: mysql引擎操作
  * @author: wuyanbo
  * @create: 2019-04-20 21:27
  **/

@@ -11,10 +11,10 @@ import abstract_factory_mode.model.*;
 public class AbstractFactoryMode {
 
     public static void main(String[] args) {
-        IUser user = DataSource.createUser(DBEnum.SQLSERVER_USER);
+        IUser user = DataSourceFactory.createUser(DBEnum.SQLSERVER_USER);
         user.insert(new User());
 
-        IDepartment department = DataSource.createDepartment(DBEnum.MYSQL_DEPARTMENT);
+        IDepartment department = DataSourceFactory.createDepartment(DBEnum.MYSQL_DEPARTMENT);
         department.select();
     }
 }
