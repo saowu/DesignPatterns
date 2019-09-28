@@ -248,3 +248,14 @@ AbstractFactoryMode | 启动类 | class | ---
 
 注意:[简单工厂、抽象工厂和抽象工厂模式的区别](https://blog.csdn.net/jerry11112/article/details/80618420)。
 
+####     12. 状态模式-----工作状态
+```
+package abstract_factory_mode
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+IUser | 操作用户接口 | interface | ---
+IDepartment | 操作部门接口 | interface | ---
+AbstractFactoryMode | 启动类 | class | ---
+
+状态模式：当一个对象的内在状态改变时允许改变其行为，这个对象看起来像是改变了其类。
