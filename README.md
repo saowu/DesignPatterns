@@ -250,12 +250,19 @@ AbstractFactoryMode | 启动类 | class | ---
 
 ####     12. 状态模式-----工作状态
 ```
-package abstract_factory_mode
+package state_mode
 ```
 类名 | 释义 | 类型 | 依赖关系 
 ---|---|---|---
-IUser | 操作用户接口 | interface | ---
-IDepartment | 操作部门接口 | interface | ---
-AbstractFactoryMode | 启动类 | class | ---
+State | 状态抽象类 | abstract | ---
+Work | 工作类 | class | ---
+ForenoonStare | 上午工作状态类 | class | extends State
+NoonState | 中午工作状态类 | class | extends State
+AfternoonState | 下午工作状态类 | class | extends State
+EveningState | 晚间工作状态 | class | extends State
+SleepingState | 睡眠状态类 | class | extends State
+RestState | 下班休息状态类 | class | extends State
+StateMode | 状态模式启动类 | class | extends State
+
 
 状态模式：当一个对象的内在状态改变时允许改变其行为，这个对象看起来像是改变了其类。
