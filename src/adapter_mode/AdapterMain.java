@@ -9,7 +9,7 @@ import adapter_mode.model.Target;
  * @create: 2019-09-30 20:00
  **/
 
-public class Main {
+public class AdapterMain {
     public static void main(String[] args) {
         Target target = new Adapter();
         target.request();

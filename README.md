@@ -266,3 +266,17 @@ StateMode | 状态模式启动类 | class | extends State
 
 
 状态模式：当一个对象的内在状态改变时允许改变其行为，这个对象看起来像是改变了其类。
+
+####     13. 适配器模式
+```
+package adapter_mode
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+Target | 客户期待的接口 | interface | ---
+Adaptee | 需要适配的类 | class | ---
+Adapter | 适配器类 | class | implements Target
+AdapterMain | 适配器启动类 | class | ---
+
+
+适配器模式：将一个类的接口转换成客户希望的另一个接口。该模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。
