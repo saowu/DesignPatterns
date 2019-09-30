@@ -1,4 +1,4 @@
-package adapter_mode;
+package adapter_mode.model;
 
 /**
  * @description: 客户期待的接口
