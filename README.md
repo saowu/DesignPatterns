@@ -294,3 +294,17 @@ MementoMode | 备忘录模式启动类 | class | ---
 
 
 备忘录模式：在不破坏封装性的前提下，捕获一个对象的内部状态。这样以后就可以将该对象恢复到原先保存的状态。
+
+####     14. 组合模式
+```
+package composite_mode
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+Component | 对象默认接口 | abstract | ---
+Composite | 枝结点 | class | extends Component
+Leaf | 叶子结点 | class | extends Component
+CompositeMode | 组合模式启动类 | class | ---
+
+
+组合模式：将对象组成树形结构以表示‘部分-整体’的层次结构。组合模式使得用户对单个对象和组合对象的使用具有一致性。
