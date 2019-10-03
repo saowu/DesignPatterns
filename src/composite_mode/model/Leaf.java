@@ -27,7 +27,7 @@ public class Leaf extends Component {
 //        for (int i = 0; i < depth; i++) {
 //            stringBuilder.append('-');
 //        }
-//        System.out.println(stringBuilder + this.name);
-        System.out.println("-".repeat(depth));
+//        System.out.println(stringBuilder + name);
+        System.out.println("-".repeat(depth) + name);
     }
 }
