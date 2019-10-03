@@ -28,11 +28,12 @@ public class Composite extends Component {
 
     @Override
     public void display(int depth) {
-        StringBuilder stringBuilder = new StringBuilder();
-        for (int i = 0; i < depth; i++) {
-            stringBuilder.append('-');
-        }
-        System.out.println(stringBuilder + this.name);
+//        StringBuilder stringBuilder = new StringBuilder();
+//        for (int i = 0; i < depth; i++) {
+//            stringBuilder.append('-');
+//        }
+//        System.out.println(stringBuilder + this.name);
+        System.out.println("-".repeat(depth));
         for (Component c : list) {
             c.display(depth + 2);
         }
