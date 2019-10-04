@@ -316,7 +316,7 @@ package iterator_mode
 类名 | 释义 | 类型 | 依赖关系 
 ---|---|---|---
 Iterator | 迭代器抽象类 | abstract | ---
-Aggregate | 聚集抽象类 | class | ---
+Aggregate | 聚集抽象类 | abstract | ---
 ConcreteIterator | 正序迭代器类 | class | extends Iterator
 ConcreteIteratorDesc | 逆序迭代器类 | class | extends Iterator
 ConcreteAggregate | 具体聚集类 | class | extends Aggregate
