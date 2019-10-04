@@ -308,3 +308,18 @@ CompositeMode | 组合模式启动类 | class | ---
 
 
 组合模式：将对象组成树形结构以表示‘部分-整体’的层次结构。组合模式使得用户对单个对象和组合对象的使用具有一致性。
+
+####     14. 迭代器模式
+```
+package iterator_mode
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+Iterator | 迭代器抽象类 | abstract | ---
+Aggregate | 聚集抽象类 | class | extends Component
+ConcreteIterator | 具体迭代器类 | class | extends Iterator
+ConcreteAggregate | 具体聚集类 | class | extends Aggregate
+IteratorMode | 迭代器模式启动类 | class | ---
+
+
+迭代器模式：提供一种方法顺序访问一个聚合对象中的各个元素，而又不暴露该对象的内部表示。
