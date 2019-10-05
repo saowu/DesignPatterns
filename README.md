@@ -44,6 +44,9 @@ OperationDiv | 除法类 | class | extends Operation
 OperationDiv | 除法类 | class | extends Operation
 OperationFactory | 运算工厂类 | class | ---
 SimpleFactoryMode | 启动类 | class | ---
+简单工厂模式：专门定义一个类来负责创建其他类的实例，被创建的实例通常都具有共同的父类。简单工厂模式属于创建型模式又叫做静态工厂方法模式，它属于类创建型模式。在简单工厂模式中，可以根据参数的不同返回不同类的实例。
+
+
 ####     2. 策略模式-----商场促销
 ```
 package strategy_mode
@@ -57,6 +60,8 @@ ReturnCharge | 返利收费 | class | extends BaseCharge
 TypeEnum | 收费折扣类型 | enum | ---
 ChargeContext | 策略算法上下文引用 | class | ----
 StrategyMode | 启动类 | class | ---
+
+策略模式：它定义了算法家族，分别分装起来，让他们之间可以相互替换，此模式让算法的变化，不会影响到使用算法的客户。
 
 #### 3.装饰模式-----穿衣系统
 ```
@@ -72,11 +77,14 @@ Sneaker | 鞋子类 | class | extends Decorator
 TShirts | T恤类 | class | extends Decorator
 DecoratorMode | 启动类 | class | ---
 
+装饰模式：动态的给一个对象添加一些额外的职责，就增加功能来说，装饰模式比生成子类更加灵活。
+
 #### 4.代理模式-----送礼物
 
 ```
 package proxy_mode
 ```
+代理模式：为其他对象提供一种代理以控制对这个对象的访问。
 
 ##### a.静态代理方式
 ```
@@ -131,6 +139,8 @@ MulFactory | 乘法工厂类 | class | implements IFactory
 DivFactory | 除法工厂类 | class | implements IFactory
 FactoryMode | 启动类 | class | ---
 
+工厂模式：定义一个用于创建对象的接口，让子类决定实例化哪个类。工厂方法使一个类的实例化延迟到其子类。
+
 相比简单工厂模式，工厂模式遵循开放-封闭原则，但增加了开发量。
 
 
@@ -171,6 +181,8 @@ PrototypeMode | 启动类 | class | ---
 - **浅拷贝**：对值类型的成员变量进行值的复制,对引用类型的成员变量仅仅复制引用,不复制引用的对象。  
 - **深拷贝**：对值类型的成员变量进行值的复制,对引用类型的成员变量也进行引用对象的复制。
 
+原型模式：用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象。
+
 ####     7. 模板方法模式-----抄试题
 ```
 package template_method_mode
@@ -182,9 +194,11 @@ TestPaperA | 手抄试卷A类 | class | extends BaseTestPaper
 TestPaperA | 手抄试卷B类 | class | extends BaseTestPaper
 TemplateMethodMode | 启动类 | class | ---
 
+模板方法模式：定义一个操作中的算法骨架，而将一些步骤延迟到子类中。模板方法使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤。
+
 模板方法模式实现了很好的代码复用性。
 
-####     8. 外观方法模式-----炒股票
+####     8. 外观模式-----炒股票
 ```
 package facade_mode
 ```
@@ -195,6 +209,8 @@ Realty | 房地产类 | class | ---
 NationalDebt | 国债类 | class | ---
 Fund | 基金类 | class | ---
 FacadeMode | 启动类 | class | ---
+
+外观模式：为子系统中的一组接口提供一个一致的界面，此模式定义了一个高层接口，这个接口使得这一子系统更加容易使用。
 
 完美体现了依赖倒转原则和迪米特法则的思想。
 
@@ -211,7 +227,7 @@ Product | 产品类 | class | ---
 Director | 指挥者类 | class | ---
 BuilderMode | 启动类 | class | ---
 
-建造者模式是在当创建复杂对象的算法应该独立于该对象的组成部分以及它们的装配方式时适用的模式。
+建造者模式：将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。
 
 ####     10. 观察者模式-----员工偷懒
 ```
@@ -226,7 +242,7 @@ Employee | 员工类 | class | extends BaseObserver
 Reception | 前台类 | class | extends BaseSubject
 ObserverMode | 启动类 | class | ---
 
-当一个对象改变需要同时改变其他对象的时候使用观察者模式（发布-订阅模式）。
+观察者模式：该模式定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象。这个主题对象在状态发生变化时，会通知所有观察者对象，使它们能够自动更新自己。
 
 ####     11. 抽象工厂模式+反射-----切换DB源
 ```
