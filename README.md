@@ -44,6 +44,7 @@ OperationDiv | 除法类 | class | extends Operation
 OperationDiv | 除法类 | class | extends Operation
 OperationFactory | 运算工厂类 | class | ---
 SimpleFactoryMode | 启动类 | class | ---
+
 简单工厂模式：专门定义一个类来负责创建其他类的实例，被创建的实例通常都具有共同的父类。简单工厂模式属于创建型模式又叫做静态工厂方法模式，它属于类创建型模式。在简单工厂模式中，可以根据参数的不同返回不同类的实例。
 
 
