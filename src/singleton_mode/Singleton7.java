@@ -18,7 +18,7 @@ public class Singleton7 {
 
     public static Singleton7 getSingleton7() {
         if (singleton7 == null) {
-            synchronized (Singleton6.class) {
+            synchronized (Singleton7.class) {
                 if (singleton7 == null) {
                     singleton7 = new Singleton7();
                 }
