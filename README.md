@@ -341,3 +341,24 @@ IteratorMode | 迭代器模式启动类 | class | ---
 
 
 迭代器模式：提供一种方法顺序访问一个聚合对象中的各个元素，而又不暴露该对象的内部表示。
+
+####     14. 单例模式
+```
+package singleton_mode
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+Iterator | 迭代器抽象类 | abstract | ---
+Aggregate | 聚集抽象类 | abstract | ---
+ConcreteIterator | 正序迭代器类 | class | extends Iterator
+ConcreteIteratorDesc | 逆序迭代器类 | class | extends Iterator
+ConcreteAggregate | 具体聚集类 | class | extends Aggregate
+IteratorMode | 迭代器模式启动类 | class | ---
+
+
+单例模式：保证一个类仅有一个实例，并提供一个访问它的全局访问点。
+    
+    特点:
+        1.一个类只允许产生一个实例化对象。
+        2.单例类构造方法私有化，不允许外部创建对象。
+        3.单例类向外提供静态方法，调用方法返回内部创建的实例化对象。
