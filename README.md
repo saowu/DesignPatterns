@@ -1,6 +1,6 @@
 # DesignPatterns
 > Java实现的设计模式案例  
-本项目是学习《大话设计模式》一书的学习笔记，欢迎指正。 
+本项目是学习《大话设计模式》一书的学习笔记，欢迎指正(部分来自其他，入侵必删)。 
 ## 一、设计原则  
     1.单一职责原则（SPR）：就一个类而言，应该仅有一个引起它变化的原因。
         如果一个类的职责过多，就等于把这些职责耦合在一起，一个职责的变化可能会削弱或者抑制这个类完成其他职责的能力。这种耦合会导致脆弱的设计，当变化发生时，设计会遭到意想
@@ -348,13 +348,15 @@ package singleton_mode
 ```
 类名 | 释义 | 类型 | 依赖关系 
 ---|---|---|---
-Iterator | 迭代器抽象类 | abstract | ---
-Aggregate | 聚集抽象类 | abstract | ---
-ConcreteIterator | 正序迭代器类 | class | extends Iterator
-ConcreteIteratorDesc | 逆序迭代器类 | class | extends Iterator
-ConcreteAggregate | 具体聚集类 | class | extends Aggregate
-IteratorMode | 迭代器模式启动类 | class | ---
-
+Singleton1 | 懒汉式（线程不安全） | class | ---
+Singleton2 | 懒汉式（线程安全，同步方法，不推荐使用） | class | ---
+Singleton3 | 饿汉式（线程安全） | class | ---
+Singleton4 | 静态内部类加载（线程安全） | class | ---
+Singleton5 | 枚举（线程安全） | class | ---
+Singleton6 | 懒汉式双重校验锁法（通常线程安全，不可保证完全安全） | class | ---
+Singleton7 | 懒汉式双重检查终极版（面试手写推荐） | class | ---
+Singleton8 | 使用 ThreadLocal 实现（线程安全） | class | ---
+Singleton9 | 使用CAS 锁实现（线程安全） | class | ---
 
 单例模式：保证一个类仅有一个实例，并提供一个访问它的全局访问点。
     
@@ -362,3 +364,5 @@ IteratorMode | 迭代器模式启动类 | class | ---
         1.一个类只允许产生一个实例化对象。
         2.单例类构造方法私有化，不允许外部创建对象。
         3.单例类向外提供静态方法，调用方法返回内部创建的实例化对象。
+
+[资料来源](https://mp.weixin.qq.com/s/-MShVr8txQ6nced-EhxAIg)
