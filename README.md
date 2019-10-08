@@ -27,6 +27,8 @@
     6.迪米特法则(LoD)：一个软件实体应当尽可能少地与其他实体发生相互作用。
         迪米特法则要求我们在设计系统时，应该尽量减少对象之间的交互，如果两个对象之间不必彼此直接通信，那么这两个对象就不应当发生任何直接的相互作用，如果其中的一个对象需要调
         用另一个对象的某一个方法的话，可以通过第三者转发这个调用。简言之，就是通过引入一个合理的第三者来降低现有对象之间的耦合度。
+    
+    7.合成/聚合复用原则(CARP)：尽量使用合成/聚合，尽量不要用类继承。
                 
 ## 二、设计模式
     
@@ -366,3 +368,19 @@ Singleton9 | 使用CAS 锁实现（线程安全） | class | ---
         3.单例类向外提供静态方法，调用方法返回内部创建的实例化对象。
 
 [资料来源](https://mp.weixin.qq.com/s/-MShVr8txQ6nced-EhxAIg)
+
+####     15. 桥接模式
+```
+package bridge_mode
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+Implementor | 实现 | abstract | ---
+ConcreteImplementorA | 具体实现A | class | extends Implementor
+ConcreteImplementorB | 具体实现B | class | extends Implementor
+Abstraction | 抽象 | abstract | ---
+RefinedAbstraction | 被提炼的抽象 | class | extends Abstraction
+BridgeMode | 桥接模式启动类 | class | ---
+
+
+桥接模式：将抽象部分与它的实现部分分离，使它们都可以独立的变化。
