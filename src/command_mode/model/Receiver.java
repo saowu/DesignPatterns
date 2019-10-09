@@ -1,7 +1,7 @@
 package command_mode.model;
 
 /**
- * @description: 接收者
+ * @description: 请求者
  * @author: wuyanbo
  * @create: 2019-10-09 16:59
  **/

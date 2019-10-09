@@ -392,8 +392,8 @@ package command_mode
 类名 | 释义 | 类型 | 依赖关系 
 ---|---|---|---
 Command | 命令接口 | abstract | ---
-ConcreteCommand | 绑定命令接收者 | class | extends Command
-Receiver | 接收者 | class | ---
+ConcreteCommand | 命令实现类 | class | extends Command
+Receiver | 请求者 | class | ---
 Invoker | 要求执行者 | class | ---
 CommandMode | 命令模式启动类 | class | ---
 
