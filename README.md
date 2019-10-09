@@ -382,5 +382,19 @@ Abstraction | 抽象 | abstract | ---
 RefinedAbstraction | 被提炼的抽象 | class | extends Abstraction
 BridgeMode | 桥接模式启动类 | class | ---
 
-
 桥接模式：将抽象部分与它的实现部分分离，使它们都可以独立的变化。
+
+
+####     16. 命令模式
+```
+package command_mode
+```
+类名 | 释义 | 类型 | 依赖关系 
+---|---|---|---
+Command | 命令接口 | abstract | ---
+ConcreteCommand | 绑定命令接收者 | class | extends Command
+Receiver | 接收者 | class | ---
+Invoker | 要求执行者 | class | ---
+CommandMode | 命令模式启动类 | class | ---
+
+命令模式：将一个请求封装成一个对象，从而使您可以用不同的请求对客户进行参数化。
