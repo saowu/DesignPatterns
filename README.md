@@ -1,5 +1,10 @@
 # DesignPatterns
-> Java实现的设计模式案例  
+> Java实现的设计模式案例
+
+[![GitHub issues](https://img.shields.io/github/issues/saowu/DesignPatterns.svg)](https://github.com/saowu/DesignPatterns/issues)
+[![GitHub forks](https://img.shields.io/github/forks/saowu/DesignPatterns.svg)](https://github.com/saowu/DesignPatterns/network)
+[![GitHub stars](https://img.shields.io/github/stars/saowu/DesignPatterns.svg)](https://github.com/saowu/DesignPatterns/stargazers)
+[![GitHub license](https://img.shields.io/github/license/saowu/DesignPatterns.svg)](https://github.com/saowu/DesignPatterns)
 本项目是学习《大话设计模式》一书的学习笔记，欢迎指正(部分来自其他，如侵必删)。 
 ## 一、设计原则  
     1.单一职责原则（SPR）：就一个类而言，应该仅有一个引起它变化的原因。
